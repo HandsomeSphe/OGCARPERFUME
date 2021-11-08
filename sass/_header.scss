@@ -1,7 +1,12 @@
 .header {
   width: 100%;
   height: 100vh;
+  @include respond(xs-phone) {
+    width: 100%;
+    height: 100vh;
+  }
 }
+
 .nav {
   width: 100%;
   height: 7rem;
@@ -9,6 +14,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 7rem;
+  @include respond(xs-phone) {
+    width: 100%;
+    height: 6.5rem;
+    padding: 0 1rem;
+    background-color: white;
+  }
   //LOGO
   &__logo {
     width: 4rem;
@@ -24,6 +35,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include respond(xs-phone) {
+      display: none;
+    }
   }
   //NAV ITEM
   &__item {
@@ -73,6 +87,14 @@
   align-items: center;
   margin: 3rem 0 0 0;
   padding: 0 7rem;
+  @include respond(xs-phone) {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0.5rem 0 0 0;
+    padding: 0 1.5rem;
+    position: relative;
+  }
   &--socials {
     flex: 0 0 2%;
     width: 100%;
@@ -81,6 +103,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    @include respond(xs-phone) {
+      display: none;
+    }
   }
 }
 #twitter {
@@ -100,6 +125,12 @@
   width: 100%;
   height: 30rem;
   margin: 0 3rem 0 14rem;
+  @include respond(xs-phone) {
+    margin: 0.1rem;
+    flex: 0 0 50%;
+    // background-color: crimson;
+    order: 5;
+  }
 }
 .first-description {
   width: 100%;
@@ -122,6 +153,10 @@
   font-size: 4.8rem;
   width: 100%;
   height: 8rem;
+  @include respond(xs-phone) {
+    font-size: 4.3rem;
+    text-align: center;
+  }
 }
 .third-description {
   width: 38rem;
@@ -129,6 +164,11 @@
   font-size: 1.6rem;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.3);
+  @include respond(xs-phone) {
+    width: 30rem;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 .buttons {
   //   background-color: coral;
@@ -137,6 +177,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include respond(xs-phone) {
+    margin: 0 auto;
+    width: 26rem;
+  }
 }
 .order {
   @include buttons;
@@ -158,10 +202,29 @@
 .product__image--1 {
   width: 22rem;
   margin-right: 13rem;
+  @include respond(xs-phone) {
+    width: 18rem;
+    margin-right: 1rem;
+  }
 }
 .additional__text--1 {
   width: 9rem;
+  @include respond(xs-phone) {
+    position: absolute;
+    top: 7%;
+    left: 60%;
+  }
 }
 #scrollbar {
   display: none;
+}
+.fa-bars {
+  font-size: 2rem;
+  margin-left: 0.7rem;
+}
+.burger_icon {
+  display: none;
+  @include respond(xs-phone) {
+    display: inline;
+  }
 }

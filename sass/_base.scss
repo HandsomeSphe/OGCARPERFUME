@@ -111,6 +111,13 @@ body {
   transition: width 0.4s;
   &:hover {
     width: 14rem;
+    @include respond(xs-phone) {
+      width: 12rem;
+    }
+  }
+  @include respond(xs-phone) {
+    width: 12rem;
+    height: 3.4rem;
   }
 }
 @keyframes sliderTab {
