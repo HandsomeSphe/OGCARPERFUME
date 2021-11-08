@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #f6f6f6;
+}
+@mixin social-handles {
+  cursor: pointer;
+  height: 3.6rem;
+  fill: rgba(0, 0, 0, 0.39);
+  transition: all 1s;
+
+  &:hover {
+    fill: rgba(0, 0, 0, 1);
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+@mixin buttons {
+  width: 13rem;
+  height: 4rem;
+  border: none;
+  border-radius: 0.4rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: width 0.4s;
+  &:hover {
+    width: 14rem;
+  }
+}
+@keyframes sliderTab {
+  0% {
+    width: 0%;
+  }
+  10% {
+    width: 15%;
+  }
+  50% {
+    width: 40%;
+  }
+  100% {
+    width: 2.5rem;
+  }
+}

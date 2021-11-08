@@ -1,0 +1,148 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M320 230.8l41.4-38.8 342.6 320-342.6 320-41.4-38.6 301-281.4z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "right_arrow_icon"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 173,
+        "id": 4,
+        "name": "right_arrow_icon",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 17,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M736 0h-448c-160 0-288 128-288 288v448c0 160 128 288 288 288h448c160 0 288-128 288-288v-448c0-160-128-288-288-288zM512 320c105.6 0 192 86.4 192 192s-86.4 192-192 192-192-86.4-192-192 86.4-192 192-192zM704 224c0-35.2 28.8-64 64-64s64 28.8 64 64-28.8 64-64 64-64-28.8-64-64z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "instagram_social_icon"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 174,
+        "id": 2,
+        "name": "instagram_social_icon",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 17,
+      "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
+          "M554.667 426.667h128v128h-128v298.667h-128v-298.667h-128v-128h128v-53.547c0-50.731 15.957-114.816 47.701-149.845 31.744-35.115 71.381-52.608 118.869-52.608h89.429v128h-89.6c-21.248 0-38.4 17.152-38.4 38.357v89.643z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "facebook_social_icon"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 175,
+        "id": 1,
+        "name": "facebook_social_icon",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 17,
+      "iconIdx": 2
+    },
+    {
+      "icon": {
+        "paths": [
+          "M954.352 272.107c-32.711 14.54-67.914 24.348-104.851 28.737 37.714-22.578 66.631-58.341 80.268-101.004-35.275 20.934-74.326 36.124-115.923 44.325-33.289-35.474-80.738-57.655-133.245-57.655-100.805 0-182.537 81.731-182.537 182.555 0 14.287 1.608 28.213 4.732 41.597-151.722-7.622-286.25-80.286-376.29-190.737-15.714 26.949-24.709 58.305-24.709 91.792 0 63.326 32.223 119.21 81.208 151.939-29.911-0.957-58.070-9.176-82.689-22.849-0.018 0.759-0.018 1.535-0.018 2.312 0 88.433 62.929 162.199 146.448 178.996-15.317 4.154-31.446 6.394-48.1 6.394-11.777 0-23.21-1.138-34.354-3.287 23.246 72.52 90.654 125.316 170.525 126.779-62.477 48.967-141.174 78.155-226.717 78.155-14.721 0-29.261-0.867-43.548-2.565 80.81 51.82 176.757 82.020 279.838 82.020 335.794 0 519.396-278.158 519.396-519.396 0-7.911-0.163-15.804-0.506-23.643 35.655-25.684 66.613-57.853 91.070-94.465z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "twitter_bird_icon"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 176,
+        "id": 0,
+        "name": "twitter_bird_icon",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 17,
+      "iconIdx": 3
+    }
+  ],
+  "height": 1024,
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon",
+      "name": "icomoon"
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16
+  }
+}
