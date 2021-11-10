@@ -1,14 +1,6 @@
 .header {
   width: 100%;
   height: 100vh;
-  @include respond(s-phone) {
-    width: 100%;
-    height: 100vh;
-  }
-  @include respond(xs-phone) {
-    width: 100%;
-    height: 100vh;
-  }
 }
 
 .nav {
@@ -18,17 +10,29 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 7rem;
+  @include respond(tablet) {
+    width: 100%;
+    height: 7rem;
+    padding: 0 4rem;
+    background-color: #c7a92d;
+  }
+  @include respond(tab-port) {
+    width: 100%;
+    height: 7rem;
+    padding: 0 5rem;
+    background-color: #c7a92d;
+  }
   @include respond(s-phone) {
     width: 100%;
     height: 6.5rem;
-    padding: 0 1rem;
-    background-color: white;
+    padding: 0 4rem;
+    background-color: #c7a92d;
   }
   @include respond(xs-phone) {
     width: 100%;
     height: 6.5rem;
     padding: 0 1rem;
-    background-color: white;
+    background-color: #c7a92d;
   }
   //LOGO
   &__logo {
@@ -45,6 +49,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include respond(tablet) {
+      display: none;
+    }
+    @include respond(tab-port) {
+      display: none;
+    }
     @include respond(s-phone) {
       display: none;
     }
@@ -100,6 +110,22 @@
   align-items: center;
   margin: 3rem 0 0 0;
   padding: 0 7rem;
+  @include respond(tablet) {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0.5rem 0 0 0;
+    padding: 0 1.5rem;
+    position: relative;
+  }
+  @include respond(tab-port) {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0.5rem 0 0 0;
+    padding: 0 1.5rem;
+    position: relative;
+  }
   @include respond(s-phone) {
     width: 100%;
     height: 100vh;
@@ -124,6 +150,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    @include respond(tablet) {
+      display: none;
+    }
+    @include respond(tab-port) {
+      display: none;
+    }
     @include respond(s-phone) {
       display: none;
     }
@@ -149,6 +181,16 @@
   width: 100%;
   height: 30rem;
   margin: 0 3rem 0 14rem;
+  @include respond(tablet) {
+    margin: 0.1rem;
+    flex: 0 0 50%;
+    order: 5;
+  }
+  @include respond(tab-port) {
+    margin: 0.1rem;
+    flex: 0 0 50%;
+    order: 5;
+  }
   @include respond(s-phone) {
     margin: 0.1rem;
     flex: 0 0 50%;
@@ -166,6 +208,12 @@
   height: 3rem;
   display: flex;
   align-items: center;
+  @include respond(tablet) {
+    padding: 0 0 0 7rem;
+  }
+  @include respond(tab-port) {
+    padding: 0 0 0 8rem;
+  }
   @include respond(s-phone) {
     padding: 0 0 0 5rem;
   }
@@ -188,13 +236,25 @@
   font-size: 4.8rem;
   width: 100%;
   height: 8rem;
+  @include respond(tablet) {
+    font-size: 4.5rem;
+    text-align: start;
+    padding: 0 7rem;
+  }
+  @include respond(tab-port) {
+    font-size: 4.3rem;
+    text-align: center;
+    padding: 0;
+  }
   @include respond(s-phone) {
     font-size: 4.3rem;
     text-align: center;
+    padding: 0;
   }
   @include respond(xs-phone) {
     font-size: 4.3rem;
     text-align: center;
+    padding: 0;
   }
 }
 .third-description {
@@ -203,6 +263,16 @@
   font-size: 1.6rem;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.3);
+  @include respond(tablet) {
+    widtn: 32rem;
+    text-align: start;
+    margin: 0 auto;
+  }
+  @include respond(tab-port) {
+    width: 30rem;
+    text-align: center;
+    margin: 0 auto;
+  }
   @include respond(s-phone) {
     width: 30rem;
     text-align: center;
@@ -221,6 +291,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include respond(tablet) {
+    margin: 0 7rem;
+  }
+  @include respond(tab-port) {
+    margin: 0 auto;
+  }
   @include respond(s-phone) {
     margin: 0 auto;
     width: 30rem;
@@ -250,6 +326,14 @@
 .product__image--1 {
   width: 22rem;
   margin-right: 13rem;
+  @include respond(tablet) {
+    width: 21rem;
+    margin-right: 1rem;
+  }
+  @include respond(tab-port) {
+    width: 21rem;
+    margin-right: 1rem;
+  }
   @include respond(s-phone) {
     width: 20rem;
     margin-right: 10rem;
@@ -261,6 +345,16 @@
 }
 .additional__text--1 {
   width: 9rem;
+  @include respond(tablet) {
+    position: absolute;
+    top: 18%;
+    left: 65%;
+  }
+  @include respond(tab-port) {
+    position: absolute;
+    top: 16%;
+    left: 65%;
+  }
   @include respond(s-phone) {
     position: absolute;
     top: 7%;
@@ -281,6 +375,12 @@
 }
 .burger_icon {
   display: none;
+  @include respond(tablet) {
+    display: inline;
+  }
+  @include respond(tab-port) {
+    display: inline;
+  }
   @include respond(s-phone) {
     display: inline;
   }
