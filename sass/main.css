@@ -119,6 +119,13 @@ body {
   height: 100vh;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .header {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .header {
     width: 100%;
@@ -139,6 +146,15 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 7rem;
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .nav {
+    width: 100%;
+    height: 6.5rem;
+    padding: 0 1rem;
+    background-color: white;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -170,6 +186,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .nav__links {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -235,6 +257,20 @@ body {
   padding: 0 7rem;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .header__body {
+    width: 100%;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0.5rem 0 0 0;
+    padding: 0 1.5rem;
+    position: relative;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .header__body {
     width: 100%;
@@ -268,6 +304,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .header__body--socials {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -342,6 +384,18 @@ body {
   margin: 0 3rem 0 14rem;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .header__body--description {
+    margin: 0.1rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .header__body--description {
     margin: 0.1rem;
@@ -365,6 +419,18 @@ body {
           align-items: center;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .first-description {
+    padding: 0 0 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .first-description {
+    padding: 0 2rem;
+  }
+}
+
 .horizontal-line {
   width: 6rem;
   height: 0.1rem;
@@ -384,6 +450,13 @@ body {
   height: 8rem;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .title {
+    font-size: 4.3rem;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .title {
     font-size: 4.3rem;
@@ -397,6 +470,14 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .third-description {
+    width: 30rem;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -421,10 +502,17 @@ body {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .buttons {
+    margin: 0 auto;
+    width: 30rem;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .buttons {
     margin: 0 auto;
-    width: 26rem;
+    width: 28rem;
   }
 }
 
@@ -446,9 +534,22 @@ body {
   width: 14rem;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .order:hover {
+    width: 12rem;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .order:hover {
     width: 12rem;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .order {
+    width: 12rem;
+    height: 3.4rem;
   }
 }
 
@@ -484,9 +585,22 @@ body {
   width: 14rem;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .products:hover {
+    width: 12rem;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .products:hover {
     width: 12rem;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .products {
+    width: 12rem;
+    height: 3.4rem;
   }
 }
 
@@ -506,6 +620,13 @@ body {
   margin-right: 13rem;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .product__image--1 {
+    width: 20rem;
+    margin-right: 10rem;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .product__image--1 {
     width: 18rem;
@@ -515,6 +636,14 @@ body {
 
 .additional__text--1 {
   width: 9rem;
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .additional__text--1 {
+    position: absolute;
+    top: 7%;
+    left: 60%;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -536,6 +665,12 @@ body {
 
 .burger_icon {
   display: none;
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .burger_icon {
+    display: inline;
+  }
 }
 
 @media only screen and (max-width: 20em) {
