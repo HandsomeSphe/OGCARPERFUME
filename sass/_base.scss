@@ -118,13 +118,30 @@ body {
       width: 12rem;
     }
   }
+  @include respond(tab-land) {
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.07rem;
+  }
+  @include respond(tablet) {
+    width: 13rem;
+    height: 4rem;
+    font-size: 1.2rem;
+  }
+  @include respond(tab-port) {
+    width: 13rem;
+    height: 4rem;
+    font-size: 1.2rem;
+  }
   @include respond(s-phone) {
     width: 12rem;
     height: 3.4rem;
+    font-size: 1.2rem;
   }
   @include respond(xs-phone) {
     width: 12rem;
     height: 3.4rem;
+    font-size: 1.2rem;
   }
 }
 @keyframes sliderTab {
