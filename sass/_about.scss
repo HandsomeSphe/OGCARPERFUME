@@ -6,6 +6,11 @@
   display: grid;
   grid-template-rows: 40rem 40rem;
   grid-template-columns: 55rem 55rem;
+  @include respond(tab-port) {
+    padding: 30rem 0 0 1rem;
+    grid-template-rows: 33rem 40rem 28rem 40rem;
+    grid-template-columns: 37rem;
+  }
   @include respond(s-phone) {
     padding: 30rem 0 0 1rem;
     grid-template-rows: 35rem 40rem 27rem 40rem;
@@ -24,6 +29,9 @@
 .section__contanier--2 {
   padding-top: 7rem;
   // background-color: lightpink;
+  @include respond(tab-port) {
+    padding: 1.5rem 0 0 7.5rem;
+  }
   @include respond(s-phone) {
     padding: 1.5rem 0 0 4rem;
   }
@@ -35,6 +43,9 @@
   padding-top: 5rem;
   padding-left: 3rem;
   // background-color: lightsalmon;
+  @include respond(tab-port) {
+    padding: 1.5rem 0 0 7.5rem;
+  }
   @include respond(s-phone) {
     padding: 0 0 0 4rem;
   }
@@ -45,6 +56,9 @@
 .section__contanier--4 {
   position: relative;
   // background-color: lightseagreen;
+  @include respond(tab-port) {
+    padding: 1.5rem 0 0 7.5rem;
+  }
   @include respond(s-phone) {
     padding: 0 0 0 4rem;
   }
@@ -58,6 +72,10 @@
   top: 15%;
   left: 0;
   z-index: 9;
+  @include respond(tab-port) {
+    width: 30rem;
+    left: 11%;
+  }
   @include respond(s-phone) {
     width: 29rem;
     left: 7%;
@@ -72,6 +90,11 @@
   position: absolute;
   top: 16%;
   left: 50%;
+  @include respond(tab-port) {
+    width: 8.2rem;
+    left: 80%;
+    top: 2%;
+  }
   @include respond(s-phone) {
     width: 8rem;
     left: 70%;
@@ -88,6 +111,9 @@
   font-weight: 700;
   width: 100%;
   height: 5rem;
+  @include respond(tab-port) {
+    font-size: 2.5rem;
+  }
   @include respond(s-phone) {
     font-size: 2.5rem;
   }
@@ -102,8 +128,15 @@
   height: 14rem;
   width: 97%;
   padding-top: 1.3rem;
+  @include respond(tab-port) {
+    font-size: 1.5rem;
+    height: 22rem;
+    width: 97%;
+  }
   @include respond(s-phone) {
+    font-size: 1.5rem;
     height: 21rem;
+    width: 97%;
   }
   @include respond(xs-phone) {
     font-size: 1.4rem;
@@ -122,6 +155,9 @@
   align-items: center;
   cursor: pointer;
   transition: all 0.4s;
+  @include respond(tab-port) {
+    width: 14rem;
+  }
   @include respond(s-phone) {
     width: 14rem;
   }
@@ -140,6 +176,9 @@
   color: white;
   margin-right: 0.5rem;
   font-size: 1.3rem;
+  @include respond(tab-port) {
+    font-size: 1.3rem;
+  }
   @include respond(s-phone) {
     font-size: 1.3rem;
   }
@@ -171,6 +210,10 @@
   height: 14rem;
   padding-top: 1.3rem;
   width: 80%;
+  @include respond(tab-port) {
+    font-size: 1.5rem;
+    width: 95%;
+  }
   @include respond(s-phone) {
     font-size: 1.5rem;
     width: 98%;
@@ -185,6 +228,9 @@
   height: 27rem;
   background-color: rgba(196, 196, 196, 0.1);
   border-radius: 0 3.5rem 0 0;
+  @include respond(tab-port) {
+    width: 33rem;
+  }
   @include respond(s-phone) {
     width: 33rem;
   }
@@ -199,13 +245,20 @@
   z-index: 10;
   top: 2%;
   left: 0;
+  @include respond(tab-port) {
+    width: 35rem;
+    top: 25%;
+    left: 8%;
+  }
   @include respond(s-phone) {
     width: 34rem;
     top: 23%;
+    left: 0;
   }
   @include respond(xs-phone) {
     width: 30rem;
     top: 23%;
+    left: 0;
   }
 }
 .bullet {
@@ -213,6 +266,11 @@
   position: absolute;
   top: 50%;
   left: 65%;
+  @include respond(tab-port) {
+    width: 4rem;
+    left: 82%;
+    top: 57%;
+  }
   @include respond(s-phone) {
     width: 4rem;
     left: 75%;

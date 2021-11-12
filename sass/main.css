@@ -1061,6 +1061,16 @@ body {
       grid-template-columns: 55rem 55rem;
 }
 
+@media only screen and (max-width: 26.5625em) {
+  #about {
+    padding: 30rem 0 0 1rem;
+    -ms-grid-rows: 33rem 40rem 28rem 40rem;
+        grid-template-rows: 33rem 40rem 28rem 40rem;
+    -ms-grid-columns: 37rem;
+        grid-template-columns: 37rem;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   #about {
     padding: 30rem 0 0 1rem;
@@ -1089,6 +1099,12 @@ body {
   padding-top: 7rem;
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .section__contanier--2 {
+    padding: 1.5rem 0 0 7.5rem;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   .section__contanier--2 {
     padding: 1.5rem 0 0 4rem;
@@ -1106,6 +1122,12 @@ body {
   padding-left: 3rem;
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .section__contanier--3 {
+    padding: 1.5rem 0 0 7.5rem;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   .section__contanier--3 {
     padding: 0 0 0 4rem;
@@ -1120,6 +1142,12 @@ body {
 
 .section__contanier--4 {
   position: relative;
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .section__contanier--4 {
+    padding: 1.5rem 0 0 7.5rem;
+  }
 }
 
 @media only screen and (max-width: 23.4375em) {
@@ -1142,6 +1170,13 @@ body {
   z-index: 9;
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .dualsperfume {
+    width: 30rem;
+    left: 11%;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   .dualsperfume {
     width: 29rem;
@@ -1161,6 +1196,14 @@ body {
   position: absolute;
   top: 16%;
   left: 50%;
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .exotictext {
+    width: 8.2rem;
+    left: 80%;
+    top: 2%;
+  }
 }
 
 @media only screen and (max-width: 23.4375em) {
@@ -1186,6 +1229,12 @@ body {
   height: 5rem;
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .section__contanier--2 h1 {
+    font-size: 2.5rem;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   .section__contanier--2 h1 {
     font-size: 2.5rem;
@@ -1207,9 +1256,19 @@ body {
   padding-top: 1.3rem;
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .section__contanier--2 div {
+    font-size: 1.5rem;
+    height: 22rem;
+    width: 97%;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   .section__contanier--2 div {
+    font-size: 1.5rem;
     height: 21rem;
+    width: 97%;
   }
 }
 
@@ -1239,6 +1298,12 @@ body {
   transition: all 0.4s;
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .touch {
+    width: 14rem;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   .touch {
     width: 14rem;
@@ -1264,6 +1329,12 @@ body {
   color: white;
   margin-right: 0.5rem;
   font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .touch p {
+    font-size: 1.3rem;
+  }
 }
 
 @media only screen and (max-width: 23.4375em) {
@@ -1312,6 +1383,13 @@ body {
   width: 80%;
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .section__contanier--3 div {
+    font-size: 1.5rem;
+    width: 95%;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   .section__contanier--3 div {
     font-size: 1.5rem;
@@ -1331,6 +1409,12 @@ body {
   height: 27rem;
   background-color: rgba(196, 196, 196, 0.1);
   border-radius: 0 3.5rem 0 0;
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .shape {
+    width: 33rem;
+  }
 }
 
 @media only screen and (max-width: 23.4375em) {
@@ -1354,10 +1438,19 @@ body {
   left: 0;
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .pricelessimage {
+    width: 35rem;
+    top: 25%;
+    left: 8%;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   .pricelessimage {
     width: 34rem;
     top: 23%;
+    left: 0;
   }
 }
 
@@ -1365,6 +1458,7 @@ body {
   .pricelessimage {
     width: 30rem;
     top: 23%;
+    left: 0;
   }
 }
 
@@ -1373,6 +1467,14 @@ body {
   position: absolute;
   top: 50%;
   left: 65%;
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .bullet {
+    width: 4rem;
+    left: 82%;
+    top: 57%;
+  }
 }
 
 @media only screen and (max-width: 23.4375em) {
