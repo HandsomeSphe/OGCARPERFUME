@@ -272,7 +272,7 @@ body {
 .nav__item:hover:not(:last-child)::before {
   display: block;
   content: "";
-  background-color: black;
+  background-color: #f7d23e;
   width: 2.5rem;
   height: 0.3rem;
   -webkit-transition: -webkit-animation 0.4s;
