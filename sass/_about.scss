@@ -6,7 +6,6 @@
   display: grid;
   grid-template-rows: 40rem 40rem;
   grid-template-columns: 55rem 55rem;
-  background-color: crimson;
 
   @include respond(tab-land) {
     padding: 7rem 0 0 2rem;

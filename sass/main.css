@@ -118,7 +118,6 @@ body {
   width: 100%;
   height: 100vh;
   padding: 1rem 4.5rem;
-  background-color: coral;
 }
 
 @media only screen and (max-width: 48em) {
@@ -1065,7 +1064,6 @@ body {
       grid-template-rows: 40rem 40rem;
   -ms-grid-columns: 55rem 55rem;
       grid-template-columns: 55rem 55rem;
-  background-color: crimson;
 }
 
 @media only screen and (max-width: 48em) {
@@ -1702,7 +1700,6 @@ body {
 .productss {
   width: 100%;
   height: 100vh;
-  background-color: slateblue;
 }
 
 @media only screen and (max-width: 48em) {
@@ -1741,6 +1738,12 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 20em) {
+  .productss__heading {
+    font-size: 2.4rem;
+  }
+}
+
 .productss__description {
   text-align: center;
   font-size: 1.3rem;
@@ -1749,6 +1752,13 @@ body {
   width: 36rem;
   height: 8rem;
   color: rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 20em) {
+  .productss__description {
+    font-size: 1.2rem;
+    width: 70%;
+  }
 }
 
 .productss__contanier {
@@ -1791,26 +1801,45 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
+@media only screen and (max-width: 20em) {
+  .product__card--description {
+    text-align: center;
+  }
+}
+
 .product__card--price {
   font-size: 1.2rem;
   font-weight: 600;
-}
-
-[class^="product-"] {
-  width: 3rem;
-  height: auto;
 }
 
 .product-1 {
   width: 16rem;
 }
 
+@media only screen and (max-width: 20em) {
+  .product-1 {
+    width: 16rem;
+  }
+}
+
 .product-2 {
   width: 21.5rem;
 }
 
+@media only screen and (max-width: 20em) {
+  .product-2 {
+    width: 21.5rem;
+  }
+}
+
 .product-3 {
   width: 25rem;
+}
+
+@media only screen and (max-width: 20em) {
+  .product-3 {
+    width: 25rem;
+  }
 }
 
 #thirdcard {
@@ -1850,9 +1879,24 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 20em) {
+  .left-arrow2,
+  .right-arrow2 {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
 .fa-chevron-left,
 .fa-chevron-right {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (max-width: 20em) {
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
