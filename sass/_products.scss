@@ -21,6 +21,9 @@
     height: 5rem;
     font-size: 3rem;
     text-align: center;
+    @include respond(tab-land) {
+      font-size: 2.9rem;
+    }
     @include respond(tablet) {
       font-size: 2.9rem;
     }
@@ -42,6 +45,10 @@
     width: 36rem;
     height: 8rem;
     color: rgba(0, 0, 0, 0.3);
+    @include respond(tab-land) {
+      font-size: 1.3rem;
+      width: 36rem;
+    }
     @include respond(tablet) {
       font-size: 1.3rem;
       width: 36rem;
@@ -77,6 +84,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include respond(tab-land) {
+    margin-right: 7rem;
+  }
+  @include respond(tablet) {
+    margin-right: 2rem;
+  }
+  @include respond(tab-port) {
+    margin-right: 2rem;
+  }
+  @include respond(s-phone) {
+    margin-right: 2rem;
+  }
+  @include respond(xs-phone) {
+    margin-right: 2rem;
+  }
   &--title {
     font-size: 1.4rem;
     font-weight: 600;
@@ -85,6 +107,9 @@
   &--description {
     font-size: 1.1rem;
     color: rgba(0, 0, 0, 0.5);
+    @include respond(tab-land) {
+      text-align: center;
+    }
     @include respond(tablet) {
       text-align: center;
     }
@@ -106,6 +131,9 @@
 
 .product-1 {
   width: 16rem;
+  @include respond(tab-land) {
+    width: 14rem;
+  }
   @include respond(tablet) {
     width: 16rem;
   }
@@ -121,6 +149,9 @@
 }
 .product-2 {
   width: 21.5rem;
+  @include respond(tab-land) {
+    width: 19rem;
+  }
   @include respond(tablet) {
     width: 21.5rem;
   }
@@ -136,6 +167,9 @@
 }
 .product-3 {
   width: 25rem;
+  @include respond(tab-land) {
+    width: 21rem;
+  }
   @include respond(tablet) {
     width: 25rem;
   }
@@ -171,6 +205,10 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  @include respond(tab-land) {
+    width: 3rem;
+    height: 3rem;
+  }
   @include respond(tablet) {
     width: 3rem;
     height: 3rem;
@@ -192,6 +230,9 @@
 .fa-chevron-right {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.6);
+  @include respond(tab-land) {
+    font-size: 1.1rem;
+  }
   @include respond(tablet) {
     font-size: 1.1rem;
   }
