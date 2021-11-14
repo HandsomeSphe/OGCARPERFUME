@@ -1,0 +1,91 @@
+.productss {
+  width: 100%;
+  height: 100vh;
+  //   background-color: lightcoral;
+  &__heading {
+    height: 5rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  &__description {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0 auto;
+    width: 36rem;
+    height: 8rem;
+    color: rgba(0, 0, 0, 0.3);
+  }
+  &__contanier {
+    width: 80%;
+    height: 44rem;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    // background-color: crimson;
+    padding: 0 5rem;
+  }
+}
+.product__card {
+  //   background-color: seagreen;
+  width: 30rem;
+  height: 40rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &--title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    height: 2.5rem;
+  }
+  &--description {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  &--price {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+[class^="product-"] {
+  width: 3rem;
+  height: auto;
+}
+.product-1 {
+  width: 16rem;
+}
+.product-2 {
+  width: 21.5rem;
+}
+.product-3 {
+  width: 25rem;
+}
+#thirdcard {
+  padding-top: 8rem;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 44rem;
+  //   background-color: royalblue;
+  padding: 0 2rem;
+}
+.left-arrow2,
+.right-arrow2 {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
