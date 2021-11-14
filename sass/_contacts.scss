@@ -2,18 +2,45 @@
   width: 100%;
   height: 100vh;
   padding: 3rem 18rem;
+  @include respond(tablet) {
+    padding: 1rem 15rem;
+  }
+  @include respond(tab-port) {
+    padding: 1rem 13rem;
+  }
+  @include respond(s-phone) {
+    padding: 1rem 9rem;
+  }
   @include respond(xs-phone) {
     padding: 1rem 5rem;
   }
   &__title {
     font-size: 2.5rem;
     font-weight: 700;
+    @include respond(tablet) {
+      font-size: 2rem;
+    }
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+    @include respond(s-phone) {
+      font-size: 2.1rem;
+    }
     @include respond(xs-phone) {
       font-size: 2rem;
     }
   }
   &__wrapper {
     display: flex;
+    @include respond(tablet) {
+      flex-direction: column;
+    }
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+    @include respond(s-phone) {
+      flex-direction: column;
+    }
     @include respond(xs-phone) {
       flex-direction: column;
     }
