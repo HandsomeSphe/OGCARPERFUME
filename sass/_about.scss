@@ -6,31 +6,37 @@
   display: grid;
   grid-template-rows: 40rem 40rem;
   grid-template-columns: 55rem 55rem;
+  background-color: crimson;
 
   @include respond(tab-land) {
-    padding: 20rem 0 0 2rem;
+    padding: 7rem 0 0 2rem;
     grid-template-rows: 40rem 40rem;
     grid-template-columns: 40rem 40rem;
+    height: 170vh;
   }
   @include respond(tablet) {
-    padding: 30rem 0 0 1rem;
+    padding: 7rem 0 0 1rem;
     grid-template-rows: 40rem 40rem 27rem 40rem;
     grid-template-columns: 37rem;
+    height: 320vh;
   }
   @include respond(tab-port) {
-    padding: 30rem 0 0 1rem;
+    padding: 7rem 0 0 1rem;
     grid-template-rows: 33rem 40rem 28rem 40rem;
     grid-template-columns: 37rem;
+    height: 310vh;
   }
   @include respond(s-phone) {
-    padding: 30rem 0 0 1rem;
+    padding: 7rem 0 0 1rem;
     grid-template-rows: 35rem 40rem 27rem 40rem;
     grid-template-columns: 35rem;
+    height: 300vh;
   }
   @include respond(xs-phone) {
-    padding: 30rem 0 0 1rem;
+    padding: 6rem 0 0 1rem;
     grid-template-rows: 30rem 40rem 25rem 40rem;
     grid-template-columns: 33rem;
+    height: 270vh;
   }
 }
 .section__contanier--1 {

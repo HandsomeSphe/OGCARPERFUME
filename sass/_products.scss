@@ -2,6 +2,22 @@
   width: 100%;
   height: 100vh;
   //   background-color: lightcoral;
+  background-color: slateblue;
+  @include respond(tab-land) {
+    height: 130vh;
+  }
+  @include respond(tablet) {
+    height: 130vh;
+  }
+  @include respond(tab-port) {
+    height: 120vh;
+  }
+  @include respond(s-phone) {
+    height: 130vh;
+  }
+  @include respond(xs-phone) {
+    height: 130vh;
+  }
   &__heading {
     height: 5rem;
     font-size: 3rem;
@@ -62,7 +78,7 @@
   width: 25rem;
 }
 #thirdcard {
-  padding-top: 8rem;
+  padding-top: 8.6rem;
 }
 .wrapper {
   display: flex;

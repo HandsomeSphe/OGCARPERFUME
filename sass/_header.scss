@@ -2,20 +2,26 @@
   width: 100%;
   height: 100vh;
   padding: 1rem 4.5rem;
+  background-color: coral;
   @include respond(tab-land) {
     padding: 0;
+    height: 115vh;
   }
   @include respond(tablet) {
     padding: 0;
+    height: 160vh;
   }
   @include respond(tab-port) {
     padding: 0;
+    height: 160vh;
   }
   @include respond(s-phone) {
     padding: 0;
+    height: 150vh;
   }
   @include respond(xs-phone) {
     padding: 0;
+    height: 145vh;
   }
 }
 
