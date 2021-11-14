@@ -277,7 +277,7 @@ body {
 .nav__item:hover:not(:last-child)::before {
   display: block;
   content: "";
-  background-color: #f7d23e;
+  background-color: black;
   width: 2.5rem;
   height: 0.3rem;
   -webkit-transition: -webkit-animation 0.4s;
@@ -2300,15 +2300,36 @@ body {
   padding: 3rem 18rem;
 }
 
+@media only screen and (max-width: 20em) {
+  .contacts {
+    padding: 1rem 5rem;
+  }
+}
+
 .contacts__title {
   font-size: 2.5rem;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 20em) {
+  .contacts__title {
+    font-size: 2rem;
+  }
 }
 
 .contacts__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 20em) {
+  .contacts__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .form {
