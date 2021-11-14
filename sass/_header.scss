@@ -220,6 +220,7 @@
   width: 100%;
   height: 30rem;
   margin: 0 3rem 0 14rem;
+  position: relative;
   @include respond(tab-land) {
     margin: 3rem 1rem 0 12rem;
   }

@@ -507,6 +507,7 @@ body {
   width: 100%;
   height: 30rem;
   margin: 0 3rem 0 14rem;
+  position: relative;
 }
 
 @media only screen and (max-width: 48em) {
@@ -2492,5 +2493,97 @@ body {
   font-weight: 600;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 1rem;
+}
+
+.order__popup {
+  width: 34rem;
+  height: 31rem;
+  background-color: lightgray;
+  position: absolute;
+  top: 3%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  display: none;
+}
+
+.order__popup--title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  height: 4rem;
+  padding: 1rem 1rem 0 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.order__popup--form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ordertype {
+  margin-bottom: 0.6rem;
+  height: 3rem;
+  width: 20rem;
+  border-radius: 2px;
+  border: none;
+  padding: 0 0.8rem;
+}
+
+#actualorder {
+  width: 20rem;
+  resize: none;
+  border-radius: 2px;
+  border: none;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.ordertype:active,
+.ordertype:focus,
+#actualorder:active,
+#actualorder:focus {
+  outline: 2px solid gold;
+}
+
+.popup__submit {
+  width: 20rem;
+  height: 3rem;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  background-color: #c7a92d;
+  cursor: pointer;
+}
+
+.fa-times-circle {
+  font-size: 1.9rem;
+  color: #fc3030;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

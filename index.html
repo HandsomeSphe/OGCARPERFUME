@@ -36,6 +36,7 @@
         </li>
       </ul>
     </nav>
+
     <!--//////////////////START OF THE HEADER///////////////////
     //////////////////////////////////////////////////////////////-->
     <header class="header">
@@ -77,6 +78,32 @@
         </div>
         <!--////////////DESCRIPTION TEXT///////////////-->
         <div class="header__body--description">
+          <!--////////////ORDER NOW POPUP///////////////-->
+          <div class="order__popup">
+            <div class="order__popup--title">
+              <div>PLACE YOUR ORDER</div>
+              <div class="removepopup"><i class="far fa-times-circle"></i></div>
+            </div>
+            <form action="#" class="order__popup--form">
+              <label for="ordertype">
+                <input
+                  type="text"
+                  placeholder="single / bulk order"
+                  class="ordertype"
+                  required
+                />
+              </label>
+
+              <textarea
+                name="typeorder"
+                id="actualorder"
+                cols="30"
+                rows="10"
+                placeholder="order"
+              ></textarea>
+              <button type="submit" class="popup__submit">SUBMIT</button>
+            </form>
+          </div>
           <div class="first-description">
             <div class="horizontal-line"></div>
             <div class="est-text">ESTABLISHED 2015</div>
