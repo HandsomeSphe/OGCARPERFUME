@@ -2153,6 +2153,42 @@ body {
   padding: 8rem 18rem;
 }
 
+@media only screen and (max-width: 48em) {
+  .section__pricing--details {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    padding: 7rem 7rem;
+  }
+}
+
+@media only screen and (max-width: 31em) {
+  .section__pricing--details {
+    width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .section__pricing--details {
+    width: 60rem;
+    padding: 5rem 13rem;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .section__pricing--details {
+    width: 40rem;
+    padding: 5rem 12rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .section__pricing--details {
+    width: 35rem;
+    padding: 5rem 10rem;
+  }
+}
+
 .section__pricing--images {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2161,9 +2197,63 @@ body {
   padding: 6rem 0;
 }
 
+@media only screen and (max-width: 31em) {
+  .section__pricing--images {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .section__pricing--images {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .section__pricing--images {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .section__pricing--images {
+    display: none;
+  }
+}
+
 .pricing-details {
   font-size: 3rem;
   height: 7rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .pricing-details {
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 31em) {
+  .pricing-details {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .pricing-details {
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .pricing-details {
+    font-size: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .pricing-details {
+    font-size: 2rem;
+  }
 }
 
 .single__order,
@@ -2188,7 +2278,19 @@ body {
   left: 0;
 }
 
+@media only screen and (max-width: 48em) {
+  .textImage {
+    width: 8rem;
+  }
+}
+
 .firstImage {
   width: 46rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .firstImage {
+    width: 36rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

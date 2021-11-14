@@ -2,19 +2,67 @@
   width: 100%;
   height: 100vh;
   display: flex;
+
   &--details {
     flex: 0 0 50%;
     padding: 8rem 18rem;
+
+    @include respond(tab-land) {
+      flex: 0 0 50%;
+      padding: 7rem 7rem;
+    }
+    @include respond(tablet) {
+      width: 60rem;
+    }
+    @include respond(tab-port) {
+      width: 60rem;
+      padding: 5rem 13rem;
+    }
+    @include respond(s-phone) {
+      width: 40rem;
+      padding: 5rem 12rem;
+    }
+    @include respond(xs-phone) {
+      width: 35rem;
+      padding: 5rem 10rem;
+    }
   }
   &--images {
     flex: 1;
     position: relative;
     padding: 6rem 0;
+    @include respond(tablet) {
+      display: none;
+    }
+    @include respond(tab-port) {
+      display: none;
+    }
+    @include respond(s-phone) {
+      display: none;
+    }
+    @include respond(xs-phone) {
+      display: none;
+    }
   }
 }
 .pricing-details {
   font-size: 3rem;
   height: 7rem;
+  @include respond(tab-land) {
+    font-size: 2.6rem;
+  }
+  @include respond(tablet) {
+    font-size: 2.4rem;
+  }
+  @include respond(tab-port) {
+    font-size: 2.2rem;
+  }
+  @include respond(s-phone) {
+    font-size: 2.1rem;
+  }
+  @include respond(xs-phone) {
+    font-size: 2rem;
+  }
 }
 .single__order,
 .double__order {
@@ -34,7 +82,13 @@
   position: absolute;
   top: 10%;
   left: 0;
+  @include respond(tab-land) {
+    width: 8rem;
+  }
 }
 .firstImage {
   width: 46rem;
+  @include respond(tab-land) {
+    width: 36rem;
+  }
 }
