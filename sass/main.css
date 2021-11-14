@@ -114,6 +114,34 @@ body {
   }
 }
 
+@-webkit-keyframes slideupform {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(6rem);
+            transform: translateY(6rem);
+  }
+  50% {
+    opacity: 0.89;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideupform {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(6rem);
+            transform: translateY(6rem);
+  }
+  50% {
+    opacity: 0.89;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .header {
   width: 100%;
   height: 100vh;
@@ -454,12 +482,6 @@ body {
 
 #twitter:hover {
   fill: black;
-  -webkit-animation-name: pulse;
-          animation-name: pulse;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 #instagram {
@@ -473,12 +495,6 @@ body {
 
 #instagram:hover {
   fill: black;
-  -webkit-animation-name: pulse;
-          animation-name: pulse;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 #facebook {
@@ -492,12 +508,6 @@ body {
 
 #facebook:hover {
   fill: black;
-  -webkit-animation-name: pulse;
-          animation-name: pulse;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 .header__body--description {
@@ -2512,8 +2522,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-animation: slideupform 0.4s 1;
+          animation: slideupform 0.4s 1;
   display: none;
 }
 
