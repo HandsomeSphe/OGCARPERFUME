@@ -1738,6 +1738,12 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .productss__heading {
+    font-size: 2.7rem;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   .productss__heading {
     font-size: 2.6rem;
@@ -1758,6 +1764,13 @@ body {
   width: 36rem;
   height: 8rem;
   color: rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .productss__description {
+    font-size: 1.3rem;
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 23.4375em) {
@@ -1814,6 +1827,12 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .product__card--description {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   .product__card--description {
     text-align: center;
@@ -1835,6 +1854,12 @@ body {
   width: 16rem;
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .product-1 {
+    width: 16rem;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   .product-1 {
     width: 16rem;
@@ -1851,6 +1876,12 @@ body {
   width: 21.5rem;
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .product-2 {
+    width: 21.5rem;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   .product-2 {
     width: 21.5rem;
@@ -1865,6 +1896,12 @@ body {
 
 .product-3 {
   width: 25rem;
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .product-3 {
+    width: 25rem;
+  }
 }
 
 @media only screen and (max-width: 23.4375em) {
@@ -1916,6 +1953,14 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .left-arrow2,
+  .right-arrow2 {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
 @media only screen and (max-width: 23.4375em) {
   .left-arrow2,
   .right-arrow2 {
@@ -1936,6 +1981,13 @@ body {
 .fa-chevron-right {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (max-width: 23.4375em) {
