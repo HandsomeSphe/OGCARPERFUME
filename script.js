@@ -9,7 +9,8 @@ const logo = document.querySelector(".nav__logo");
 const getintouch__button = document.querySelector(".touch");
 const header = document.querySelector(".header");
 const scrollnavbar = document.querySelector("#scrollbar");
-
+const menu_smallscreen = document.querySelector(".menubar");
+const burger_icon = document.querySelector(".burger_icon");
 //logo bringing back to home page
 logo.addEventListener("click", function () {
   document.querySelector("#home").scrollIntoView({
@@ -18,6 +19,16 @@ logo.addEventListener("click", function () {
 });
 //Smooth scroll navigation
 actual__nav.addEventListener("click", function (e) {
+  e.preventDefault();
+  if ((e.target.contians = "nav__link")) {
+    const id = e.target.getAttribute("href");
+    console.log(id);
+    document.querySelector(id).scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+});
+scrollnavbar.addEventListener("click", function (e) {
   e.preventDefault();
   if ((e.target.contians = "nav__link")) {
     const id = e.target.getAttribute("href");
@@ -44,6 +55,10 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 });
 
 headerObserver.observe(header);
+//Menu small screens
+// burger_icon.addEventListener("click", function () {
+//   menu_smallscreen.style.display = "flex";
+// });
 //Show the popup
 order__button.addEventListener("click", function () {
   order__popup.style.display = "flex";

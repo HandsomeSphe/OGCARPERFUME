@@ -26,18 +26,44 @@
     <nav class="nav scrollbar" id="scrollbar">
       <img src="/images/favicon 1.png" alt="Logo" class="nav__logo" />
       <ul class="nav__links">
-        <li class="nav__item"><a href="#" class="nav__link">HOME</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">ABOUT</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">PRODUCTS</a></li>
+        <li class="nav__item"><a href="#home" class="nav__link">HOME</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">ABOUT</a></li>
         <li class="nav__item">
-          <a href="#" class="nav__link">PRICE-LIST</a>
+          <a href="#products" class="nav__link">PRODUCTS</a>
+        </li>
+        <li class="nav__item">
+          <a href="#pricing" class="nav__link">PRICE-LIST</a>
         </li>
         <li class="nav__item" id="contactBtn">
-          <a href="#" class="nav__link nav__link--contact">CONTACT US</a>
+          <a href="#contacts" class="nav__link nav__link--contact"
+            >CONTACT US</a
+          >
         </li>
       </ul>
+      <div class="burger_icon scrollburger"><i class="fas fa-bars"></i></div>
     </nav>
 
+    <!--small screens-->
+    <div class="menubar">
+      <div class="remove__menu--small"><i class="far fa-times-circle"></i></div>
+      <ul class="unorder__list">
+        <li class="unorder__list--item">
+          <a href="#" class="unorder__list--link">HOME</a>
+        </li>
+        <li class="unorder__list--item">
+          <a href="#" class="unorder__list--link">ABOUT</a>
+        </li>
+        <li class="unorder__list--item">
+          <a href="#" class="unorder__list--link">PRODUCTS</a>
+        </li>
+        <li class="unorder__list--item">
+          <a href="#" class="unorder__list--link">PRICE-LIST</a>
+        </li>
+        <li class="unorder__list--item">
+          <a href="#" class="unorder__list--link">CONTACT</a>
+        </li>
+      </ul>
+    </div>
     <!--//////////////////START OF THE HEADER///////////////////
     //////////////////////////////////////////////////////////////-->
     <header class="header">
@@ -67,16 +93,21 @@
       <div class="header__body" id="home">
         <!--////////////SOCIAL MEDIA HANDLES///////////////-->
         <div class="header__body--socials">
-          <svg class="social-media" id="twitter">
-            <use
-              xlink:href="/images/SVG/sprite.svg#icon-twitter_bird_icon"
-            ></use>
-          </svg>
-          <svg class="social-media" id="instagram">
-            <use
-              xlink:href="/images/SVG/sprite.svg#icon-instagram_social_icon"
-            ></use>
-          </svg>
+          <a href="https://twitter.com/OGCARPERFUME" target="_blank">
+            <svg class="social-media" id="twitter">
+              <use
+                xlink:href="/images/SVG/sprite.svg#icon-twitter_bird_icon"
+              ></use>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/og_carperfume/" target="_blank">
+            <svg class="social-media" id="instagram">
+              <use
+                xlink:href="/images/SVG/sprite.svg#icon-instagram_social_icon"
+              ></use>
+            </svg>
+          </a>
+
           <svg class="social-media" id="facebook">
             <use
               xlink:href="/images/SVG/sprite.svg#icon-facebook_social_icon"
@@ -333,6 +364,7 @@
         emailjs.init("user_Kv7HcbNMB526wf8xVpvuM");
       })();
     </script>
+
     <script src="script.js"></script>
   </body>
 </html>
