@@ -41,6 +41,7 @@
     }
     @include respond(s-phone) {
       display: none;
+      height: 0;
     }
     @include respond(xs-phone) {
       display: none;

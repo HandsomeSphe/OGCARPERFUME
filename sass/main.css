@@ -2235,6 +2235,7 @@ body {
 @media only screen and (max-width: 23.4375em) {
   .section__pricing--images {
     display: none;
+    height: 0;
   }
 }
 
