@@ -2199,6 +2199,7 @@ body {
 @media only screen and (max-width: 23.4375em) {
   .section__pricing--details {
     width: 40rem;
+    height: 70vh;
     padding: 5rem 12rem;
   }
 }
@@ -2206,6 +2207,7 @@ body {
 @media only screen and (max-width: 20em) {
   .section__pricing--details {
     width: 35rem;
+    height: 100vh;
     padding: 5rem 10rem;
   }
 }
