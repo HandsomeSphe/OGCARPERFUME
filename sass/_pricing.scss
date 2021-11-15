@@ -21,7 +21,7 @@
     @include respond(s-phone) {
       width: 40rem;
       height: 50vh;
-      padding: 5rem 12rem;
+      padding: 2rem 12rem;
     }
     @include respond(xs-phone) {
       width: 35rem;
