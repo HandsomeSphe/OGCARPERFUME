@@ -17,7 +17,7 @@
   }
   @include respond(s-phone) {
     padding: 0;
-    height: 150vh;
+    height: 130vh;
   }
   @include respond(xs-phone) {
     padding: 0;
