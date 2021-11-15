@@ -45,22 +45,24 @@
 
     <!--small screens-->
     <div class="menubar">
-      <div class="remove__menu--small"><i class="far fa-times-circle"></i></div>
+      <div class="remove__menu--small">
+        <i class="far fa-times-circle" id="removemenu"></i>
+      </div>
       <ul class="unorder__list">
         <li class="unorder__list--item">
-          <a href="#" class="unorder__list--link">HOME</a>
+          <a href="#home" class="unorder__list--link">HOME</a>
         </li>
         <li class="unorder__list--item">
-          <a href="#" class="unorder__list--link">ABOUT</a>
+          <a href="#about" class="unorder__list--link">ABOUT</a>
         </li>
         <li class="unorder__list--item">
-          <a href="#" class="unorder__list--link">PRODUCTS</a>
+          <a href="#products" class="unorder__list--link">PRODUCTS</a>
         </li>
         <li class="unorder__list--item">
-          <a href="#" class="unorder__list--link">PRICE-LIST</a>
+          <a href="#pricing" class="unorder__list--link">PRICE-LIST</a>
         </li>
         <li class="unorder__list--item">
-          <a href="#" class="unorder__list--link">CONTACT</a>
+          <a href="#contacts" class="unorder__list--link">CONTACT</a>
         </li>
       </ul>
     </div>
@@ -87,7 +89,7 @@
             >
           </li>
         </ul>
-        <div class="burger_icon"><i class="fas fa-bars"></i></div>
+        <div class="burger_icon"><i class="fas fa-bars" id="burger1"></i></div>
       </nav>
 
       <div class="header__body" id="home">
@@ -120,7 +122,9 @@
           <div class="order__popup">
             <div class="order__popup--title">
               <div>PLACE YOUR ORDER</div>
-              <div class="removepopup"><i class="far fa-times-circle"></i></div>
+              <div class="removepopup">
+                <i class="far fa-times-circle" id="removepopup"></i>
+              </div>
             </div>
             <form class="order__popup--form">
               <label for="name">
@@ -236,124 +240,126 @@
           <img src="./images/bullet.png" alt="bulletimage" class="bullet" />
         </div>
       </section>
-    </main>
-    <!--//////////////////END OF THE ABOUT US SECTION///////////////////
-    //////////////////////////////////////////////////////////////-->
-    <section class="section productss" id="products">
-      <h1 class="productss__heading">OUR PRODUCTS</h1>
-      <div class="productss__description">
-        We supply car perfume in a range of sizes including 10ml, 30ml and 50ml
-      </div>
 
-      <div class="wrapper">
-        <div class="left-arrow2">
-          <i class="fas fa-chevron-left"></i>
-        </div>
-        <div class="productss__contanier">
-          <div class="product__card">
-            <div class="product__card--image">
-              <img src="./images/E2 1.png" alt="product" class="product-1" />
-            </div>
-            <div class="product__card--title">GOLD ESSENCE</div>
-            <div class="product__card--description">
-              We supply car perfume in 30 ml
-            </div>
-            <div class="product__card--price">R30</div>
-          </div>
-          <div class="product__card">
-            <div class="product__card--image">
-              <img
-                src="./images/E2NGMV8XsAExNl4 1.png"
-                alt="product"
-                class="product-2"
-              />
-            </div>
-            <div class="product__card--title">QUEEN CROWN</div>
-            <div class="product__card--description">
-              We supply car perfume in 30 ml
-            </div>
-            <div class="product__card--price">R30</div>
-          </div>
-          <div class="product__card" id="thirdcard">
-            <div class="product__card--image">
-              <img
-                src="./images/AnotherOne 3.png"
-                alt="product"
-                class="product-3"
-              />
-            </div>
-            <div class="product__card--title">DUAL MAGIC</div>
-            <div class="product__card--description">
-              We supply car perfume in 8 ml x 2
-            </div>
-            <div class="product__card--price">R50</div>
-          </div>
-        </div>
-        <div class="right-arrow2">
-          <i class="fas fa-chevron-right"></i>
-        </div>
-      </div>
-    </section>
-    <!--//////////////////END OF THE OUR PRODUCTS///////////////////
+      <!--//////////////////END OF THE ABOUT US SECTION///////////////////
     //////////////////////////////////////////////////////////////-->
-    <section class="section__pricing" id="pricing">
-      <div class="section__pricing--details">
-        <h1 class="pricing-details">OUR PRICE LIST</h1>
-        <div class="single__order">
-          <div class="single__order--1">Spray Bottle 50ml R50</div>
-          <div class="single__order--2">Spray Bottle 30ml R30</div>
-          <div class="single__order--3">Spray Bottle 8ml R25</div>
+      <section class="section productss" id="products">
+        <h1 class="productss__heading">OUR PRODUCTS</h1>
+        <div class="productss__description">
+          We supply car perfume in a range of sizes including 10ml, 30ml and
+          50ml
         </div>
-        <div class="double__order">
-          <div class="double__order--1">Spray Bottle 50ml R35</div>
-          <div class="double__order--2">Spray Bottle 30ml R25</div>
-          <div class="double__order--3">Spray Bottle 8ml R15</div>
+
+        <div class="wrapper">
+          <div class="left-arrow2">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="productss__contanier">
+            <div class="product__card">
+              <div class="product__card--image">
+                <img src="./images/E2 1.png" alt="product" class="product-1" />
+              </div>
+              <div class="product__card--title">GOLD ESSENCE</div>
+              <div class="product__card--description">
+                We supply car perfume in 30 ml
+              </div>
+              <div class="product__card--price">R30</div>
+            </div>
+            <div class="product__card">
+              <div class="product__card--image">
+                <img
+                  src="./images/E2NGMV8XsAExNl4 1.png"
+                  alt="product"
+                  class="product-2"
+                />
+              </div>
+              <div class="product__card--title">QUEEN CROWN</div>
+              <div class="product__card--description">
+                We supply car perfume in 30 ml
+              </div>
+              <div class="product__card--price">R30</div>
+            </div>
+            <div class="product__card" id="thirdcard">
+              <div class="product__card--image">
+                <img
+                  src="./images/AnotherOne 3.png"
+                  alt="product"
+                  class="product-3"
+                />
+              </div>
+              <div class="product__card--title">DUAL MAGIC</div>
+              <div class="product__card--description">
+                We supply car perfume in 8 ml x 2
+              </div>
+              <div class="product__card--price">R50</div>
+            </div>
+          </div>
+          <div class="right-arrow2">
+            <i class="fas fa-chevron-right"></i>
+          </div>
         </div>
-      </div>
-      <div class="section__pricing--images">
-        <img
-          src="./images/EXOTIC CAR PERFUME.png"
-          alt="textImage"
-          class="textImage"
-        />
-        <img
-          src="./images/PricesesImage23 2.png"
-          alt="pricelessimage"
-          class="firstImage"
-        />
-      </div>
-    </section>
-    <!--//////////////////END OF THE PRICING SECTION///////////////////
+      </section>
+      <!--//////////////////END OF THE OUR PRODUCTS///////////////////
     //////////////////////////////////////////////////////////////-->
-    <section class="contacts">
-      <div class="contacts__title" id="contacts">OUR CONTACT PAGE</div>
-      <div class="contacts__wrapper">
-        <form action="#" class="form">
-          <label for="name">
-            <input type="text" class="name" placeholder="name" required />
-          </label>
-          <label for="email">
-            <input type="text" class="email" placeholder="email" required />
-          </label>
-          <textarea
-            name="mssg"
-            id="mssg"
-            cols="30"
-            rows="10"
-            placeholder="message"
-          ></textarea>
-          <button type="submit" class="submit__form">SUBMIT</button>
-        </form>
-        <div class="contacts__details">
-          <div class="contacts__details--email">
-            OUR EMAIL : ogcarperfumes@gmail.com
+      <section class="section__pricing" id="pricing">
+        <div class="section__pricing--details">
+          <h1 class="pricing-details">OUR PRICE LIST</h1>
+          <div class="single__order">
+            <div class="single__order--1">Spray Bottle 50ml R50</div>
+            <div class="single__order--2">Spray Bottle 30ml R30</div>
+            <div class="single__order--3">Spray Bottle 8ml R25</div>
           </div>
-          <div class="contacts__details--number">
-            PHONE NUMBER (GARY): 084 927 9890
+          <div class="double__order">
+            <div class="double__order--1">Spray Bottle 50ml R35</div>
+            <div class="double__order--2">Spray Bottle 30ml R25</div>
+            <div class="double__order--3">Spray Bottle 8ml R15</div>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="section__pricing--images">
+          <img
+            src="./images/EXOTIC CAR PERFUME.png"
+            alt="textImage"
+            class="textImage"
+          />
+          <img
+            src="./images/PricesesImage23 2.png"
+            alt="pricelessimage"
+            class="firstImage"
+          />
+        </div>
+      </section>
+      <!--//////////////////END OF THE PRICING SECTION///////////////////
+    //////////////////////////////////////////////////////////////-->
+      <section class="contacts">
+        <div class="contacts__title" id="contacts">OUR CONTACT PAGE</div>
+        <div class="contacts__wrapper">
+          <form action="#" class="form">
+            <label for="name">
+              <input type="text" class="name" placeholder="name" required />
+            </label>
+            <label for="email">
+              <input type="text" class="email" placeholder="email" required />
+            </label>
+            <textarea
+              name="mssg"
+              id="mssg"
+              cols="30"
+              rows="10"
+              placeholder="message"
+            ></textarea>
+            <button type="submit" class="submit__form">SUBMIT</button>
+          </form>
+          <div class="contacts__details">
+            <div class="contacts__details--email">
+              OUR EMAIL : ogcarperfumes@gmail.com
+            </div>
+            <div class="contacts__details--number">
+              PHONE NUMBER (GARY): 084 927 9890
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script
       type="text/javascript"

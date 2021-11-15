@@ -1,6 +1,6 @@
 const order__button = document.querySelector(".order");
 const order__popup = document.querySelector(".order__popup");
-const order__remove = document.querySelector(".fa-times-circle");
+const order__remove = document.querySelector("#removepopup");
 const products__button = document.querySelector(".products");
 const products__section = document.querySelector("#products");
 const actual__nav = document.querySelector(".nav__actual");
@@ -11,6 +11,9 @@ const header = document.querySelector(".header");
 const scrollnavbar = document.querySelector("#scrollbar");
 const menu_smallscreen = document.querySelector(".menubar");
 const burger_icon = document.querySelector(".burger_icon");
+const burger_icon_actual = document.querySelector("#burger1");
+const remove_smallscreen_menu = document.querySelector("#removemenu");
+const whole_website = document.querySelector(".main");
 //logo bringing back to home page
 logo.addEventListener("click", function () {
   document.querySelector("#home").scrollIntoView({
@@ -22,7 +25,6 @@ actual__nav.addEventListener("click", function (e) {
   e.preventDefault();
   if ((e.target.contians = "nav__link")) {
     const id = e.target.getAttribute("href");
-    console.log(id);
     document.querySelector(id).scrollIntoView({
       behavior: "smooth",
     });
@@ -32,7 +34,7 @@ scrollnavbar.addEventListener("click", function (e) {
   e.preventDefault();
   if ((e.target.contians = "nav__link")) {
     const id = e.target.getAttribute("href");
-    console.log(id);
+
     document.querySelector(id).scrollIntoView({
       behavior: "smooth",
     });
@@ -41,7 +43,7 @@ scrollnavbar.addEventListener("click", function (e) {
 //Sticky Navigation bar
 const stickyNav = function (entries) {
   const [entry] = entries;
-  console.log(entry);
+
   if (!entry.isIntersecting) {
     scrollnavbar.classList.remove("reveal");
   } else {
@@ -163,3 +165,35 @@ function sendContactMail(e) {
   }
 }
 user__submit.addEventListener("click", sendContactMail);
+//small screen menu
+burger_icon.addEventListener("click", function () {
+  menu_smallscreen.style.display = "block";
+  whole_website.style.display = "none";
+  header.style.display = "none";
+});
+burger_icon_actual.addEventListener("click", function () {
+  menu_smallscreen.style.display = "block";
+  whole_website.style.display = "none";
+  header.style.display = "none";
+});
+remove_smallscreen_menu.addEventListener("click", function () {
+  menu_smallscreen.style.display = "none";
+  whole_website.style.display = "block";
+  header.style.display = "block";
+});
+//last smooth scroll for small screens
+document
+  .querySelector(".unorder__list")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    if ((e.target.contians = "unorder__list--link")) {
+      menu_smallscreen.style.display = "none";
+      whole_website.style.display = "block";
+      header.style.display = "block";
+      const page = e.target.getAttribute("href");
+      document.querySelector(page).scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+    // e.stopPropagation();
+  });
