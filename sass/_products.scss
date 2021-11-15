@@ -12,7 +12,7 @@
     height: 120vh;
   }
   @include respond(s-phone) {
-    height: 130vh;
+    height: 90vh;
   }
   @include respond(xs-phone) {
     height: 130vh;
