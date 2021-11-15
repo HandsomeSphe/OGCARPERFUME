@@ -26,7 +26,7 @@
     height: 260vh;
   }
   @include respond(s-phone) {
-    padding: 7rem 0 0 1rem;
+    padding: 4rem 0 0 1rem;
     grid-template-rows: 35rem 40rem 27rem 40rem;
     grid-template-columns: 35rem;
     height: 230vh;

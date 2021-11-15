@@ -172,7 +172,7 @@ body {
 @media only screen and (max-width: 23.4375em) {
   .header {
     padding: 0;
-    height: 110vh;
+    height: 100vh;
   }
 }
 
@@ -1122,7 +1122,7 @@ body {
 
 @media only screen and (max-width: 23.4375em) {
   #about {
-    padding: 7rem 0 0 1rem;
+    padding: 4rem 0 0 1rem;
     -ms-grid-rows: 35rem 40rem 27rem 40rem;
         grid-template-rows: 35rem 40rem 27rem 40rem;
     -ms-grid-columns: 35rem;
