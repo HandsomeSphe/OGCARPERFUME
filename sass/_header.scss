@@ -445,7 +445,14 @@
     left: 60%;
   }
 }
-#scrollbar {
+.scrollbar {
+  background-color: white;
+  z-index: 10000;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+.reveal {
   display: none;
 }
 .fa-bars {

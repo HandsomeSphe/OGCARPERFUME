@@ -7,6 +7,8 @@ const actual__nav = document.querySelector(".nav__actual");
 const nav__link = document.querySelectorAll(".nav__link");
 const logo = document.querySelector(".nav__logo");
 const getintouch__button = document.querySelector(".touch");
+const header = document.querySelector(".header");
+const scrollnavbar = document.querySelector("#scrollbar");
 
 //logo bringing back to home page
 logo.addEventListener("click", function () {
@@ -25,7 +27,23 @@ actual__nav.addEventListener("click", function (e) {
     });
   }
 });
+//Sticky Navigation bar
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  console.log(entry);
+  if (!entry.isIntersecting) {
+    scrollnavbar.classList.remove("reveal");
+  } else {
+    scrollnavbar.classList.add("reveal");
+  }
+};
 
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+});
+
+headerObserver.observe(header);
 //Show the popup
 order__button.addEventListener("click", function () {
   order__popup.style.display = "flex";
