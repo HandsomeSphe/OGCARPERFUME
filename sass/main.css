@@ -1116,7 +1116,7 @@ body {
         grid-template-rows: 33rem 40rem 28rem 40rem;
     -ms-grid-columns: 37rem;
         grid-template-columns: 37rem;
-    height: 310vh;
+    height: 260vh;
   }
 }
 
@@ -1737,7 +1737,7 @@ body {
 
 @media only screen and (max-width: 26.5625em) {
   .productss {
-    height: 120vh;
+    height: 100vh;
   }
 }
 
