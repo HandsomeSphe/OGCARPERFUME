@@ -1127,7 +1127,7 @@ body {
         grid-template-rows: 35rem 40rem 27rem 40rem;
     -ms-grid-columns: 35rem;
         grid-template-columns: 35rem;
-    height: 270vh;
+    height: 150vh;
   }
 }
 
