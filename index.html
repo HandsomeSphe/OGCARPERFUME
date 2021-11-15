@@ -18,6 +18,7 @@
       crossorigin="anonymous"
     />
     <link rel="icon" type="image/png" href="/images/favicon 1.png" />
+
     <title>OG CAR PERFUME</title>
   </head>
   <body>
@@ -90,12 +91,22 @@
               <div>PLACE YOUR ORDER</div>
               <div class="removepopup"><i class="far fa-times-circle"></i></div>
             </div>
-            <form action="#" class="order__popup--form">
-              <label for="ordertype">
+            <form class="order__popup--form">
+              <label for="name">
                 <input
                   type="text"
                   placeholder="single / bulk order"
                   class="ordertype"
+                  id="name"
+                  required
+                />
+              </label>
+              <label for="orderemail">
+                <input
+                  type="text"
+                  placeholder="email"
+                  class="ordertype"
+                  id="orderemail"
                   required
                 />
               </label>
@@ -300,7 +311,7 @@
             rows="10"
             placeholder="message"
           ></textarea>
-          <button type="submit" class="submit">SUBMIT</button>
+          <button type="submit" class="submit__form">SUBMIT</button>
         </form>
         <div class="contacts__details">
           <div class="contacts__details--email">
@@ -312,6 +323,16 @@
         </div>
       </div>
     </section>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_Kv7HcbNMB526wf8xVpvuM");
+      })();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
